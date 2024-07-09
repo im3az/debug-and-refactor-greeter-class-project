@@ -68,7 +68,7 @@ class FormalGreeter extends Greeter {
       throw new Error("Title must be a string");
     }
 
-    super(undefined, name);
+    super('Hello', name);
     this.#title = title;
   }
 
@@ -94,8 +94,10 @@ class FormalGreeter extends Greeter {
 // const fg = new FormalGreeter().greet();
 // console.log(fg);
 
-const greeter = new Greeter("Hello", "Alice");
-const fg = new FormalGreeter().greet();
-console.log(fg);
+// const greeter = new Greeter("Hello", "Alice");
+// const fg = new FormalGreeter().greet();
+// console.log(fg);
 
 
+
+export { Greeter, FormalGreeter };
